@@ -1,0 +1,130 @@
+@font-face {
+    font-family: "mr_Valshu";
+    font-style: normal;
+    font-weight: 400;
+    font-family: "Caesar Dressing Cyrillic";
+    /* Браузер сначала попробует найти шрифт локально */
+    src: local("mr_Valshu"),
+         url("../fonts/cosmos.woff") format("woff");
+    src: local("Caesar Dressing Cyrillic"),   
+         url("../fonts/egypt.woff") format("woff");
+  }
+
+::-webkit-input-placeholder {
+    color:rgba(0, 0, 0, 0.4);
+    opacity:1;
+}/* webkit */
+::-moz-placeholder {
+    color:rgba(0, 0, 0, 0.4);
+    opacity:1;
+}/* Firefox 19+ */
+:-moz-placeholder {
+    color:rgba(0, 0, 0, 0.4);
+    opacity:1;
+}/* Firefox 18- */
+:-ms-input-placeholder {
+    color:rgba(0, 0, 0, 0.4);
+    opacity:1;
+}/* IE */
+
+:focus::-webkit-input-placeholder {
+    opacity:0;
+}/* webkit */
+:focus::-moz-placeholder {
+    opacity:0;
+}/* Firefox 19+ */
+:focus:-moz-placeholder {
+    opacity:0;
+}/* Firefox 18- */
+:focus:-ms-input-placeholder {
+    opacity:0;
+}/* IE */
+
+h1, .riddle {
+    background: #A4823F;
+    font-family: 'mr_Valshu', Regular;
+    font-style: normal;
+    font-weight: 400;
+    font-family: 'Caesar Dressing Cyrillic', Regular;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+
+    /*border-radius: 25px;*/
+    margin: 5px;
+    border: 3px solid #000000;
+}
+
+
+.riddle {
+    width: 180px;
+    height: 80px;
+}
+
+.hr-vertical-gradient {
+    margin: 20px 0;
+    padding: 0;
+    height: 10px;
+    width: 99%;
+    border: none;
+    background: linear-gradient(180deg, #A4823F, #A4823F);
+}
+
+html, body {
+    width: 99%;
+    height: 99%;
+    text-align: center; 
+    background: url(../img/anubisBG.jpg) no-repeat center center fixed;
+    background-size: cover;
+}
+
+#bodyInnerHTML {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.room {
+    height: 180px;
+}
+
+.card {
+    box-sizing: border-box;
+
+    width: 200px;
+    height: 200px;
+
+    /* gold button */
+
+    background: #A4823F;
+    /* Authentication */
+
+    border: 3px solid #000000;
+}
+
+button, input {
+    width: 700px;
+    height: 80px;
+
+    /* gold button */
+    background: #A4823F;
+
+    border-radius: 25px;
+    margin: 5px;
+     /* Blue margin button */
+    border: 3px solid #365789;
+    box-sizing: border-box;
+    font-family: 'Caesar Dressing Cyrillic', Regular;
+    /* font-family: 'mr_Valshu', Regular; */
+    font-style: normal;
+    font-weight: 400;
+    /* text-shadow: 1px 1px 1px black,
+    2px 2px 1px black; */
+    font-size: 40px;
+    line-height: 48px;
+    text-align: center;
+}
+
